@@ -10,7 +10,9 @@ urlpatterns = [
     ),
     path(
         "manage-list/<int:pk>/",
-        MusicianViewSet.as_view({"get": "retrieve", "put": "update", "delete": "destroy"}),
+        MusicianViewSet.as_view(
+            {"get": "retrieve", "put": "update", "delete": "destroy"}
+        ),
         name="manage-list-detail",
     ),
 ]
